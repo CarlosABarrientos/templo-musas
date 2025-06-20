@@ -1,0 +1,398 @@
+
+/* es una hoja de estilos (CSS)
+
+*/
+
+html {
+    font-size: 1rem;
+}
+
+* {
+    font-family: "Open Sans", sans-serif;
+}
+
+body {
+    background-image: url(/img/biblioteca.png);
+}
+
+header {
+    display: flex;
+    width:90%;
+    background-image: url(/img/fondocover.png);
+    background-color: rgba(255, 242, 0, 0.5);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: sticky;
+    top: 40px;
+    margin-top: 30px;
+    margin-left: 45px;;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border:13px outset;
+
+
+}
+
+header:hover {
+    box-shadow: 150px 120px 60px rgb(0, 0, 0);
+}
+
+.recuadro-header {
+    box-sizing: 50%;
+    display:flex;
+}
+
+.logo {
+    margin-top: 26px;
+    margin-left: 50px;
+    padding-top: 12px;
+    padding-left: 15px;
+    border: 3px;
+}
+
+td {
+    margin-left: 5cm;
+}
+
+
+h1 {
+    color:  rgb(90, 72, 44);
+    margin-left: 3cm;
+    margin-top: 2cm;
+    font-size: 30px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.h1-clase:hover {
+    color: rgb(21, 0, 255);
+
+}
+
+.h2-clase:hover {
+    color: red;
+}
+
+h2 {
+    margin-left: 5cm;
+    color:  rgb(90, 72, 44);
+}
+
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+
+    height: auto;
+    margin-right: 3%;
+}
+
+nav ul {
+    display: flex;
+
+    list-style: none;
+    align-items: center;
+    margin-top: 120px;
+    margin-right: 60px;
+    padding-top: 3px;
+
+}
+
+nav li {
+    margin-right: 20px; /*  O un padding para separar los items */
+    text-align: center;
+}
+
+.contenedor {
+    display: grid;
+
+    display: flex;
+    margin-top: 120px;
+    justify-content:space-around;
+    flex-wrap:wrap;
+    align-items: stretch;
+    flex-wrap: wrap;
+    border: 5px solid black;
+    height: auto;
+}
+
+
+
+p {
+    color:rgb(113, 96, 52);
+
+}
+
+.pcolor {
+   
+    color:rgb(113, 96, 52);
+
+}
+
+li a {
+    color: inherit;
+    text-decoration: none;
+
+}
+
+.nav-item {
+    margin-top: 120px;
+    margin-right: 40px;
+    display: inline-block;
+    padding-top: 3px;
+
+
+}
+
+.nav-list:hover {
+color: rgb(21, 0, 255);
+}
+
+
+ul {
+    list-style: none;
+}
+
+main {
+    background-image: url(/img/fondocover.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-size: 13px;
+    margin-left: 20px;
+    margin-right: 40px;
+    padding-left: 50px;
+    align-content: center;
+}
+
+.cuadro-explica {
+    margin-left: 40px;
+}
+
+.textos {
+    display: flex;
+    margin-top: 120px;
+    justify-content:center;
+    flex-wrap:wrap;
+    align-items:stretch;
+    flex-wrap: wrap;
+    height: auto;
+    width: auto;
+    justify-items: center;
+}
+
+.item {
+    width: auto;
+    height: auto;
+    transition: transform 2s ease-in-out;
+}
+
+.item:hover {
+    transform: scale(1.5);
+    box-shadow: 50px 20px 60px rgb(0, 0, 0);
+}
+
+.h2-libros {
+    margin-left: 70px;
+    margin-top: 40px;
+}
+.h4-libros {
+    margin-left: 90px;
+}
+
+.card-title {
+    width: 40%;
+}
+
+.imperdible {
+    font-size:xx-large;
+    z-index: 20;
+
+}
+
+.subtitulado {
+    font-size:xx-large;
+}
+
+.libros {
+    transition: transform 3s ease-in-out;
+}
+
+.recuadro {
+    margin-inline-start: 25%;
+    margin-top: 220px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size:xx-large;
+    font-weight: 100px;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: rgb(9, 9, 9);
+    width: 100%vw;
+    height: 30px;
+}
+
+.p-seleccionados:hover {
+    color: red;
+}
+
+.grilla {
+    display:grid;
+    place-items: center;
+    margin-left: 80px;
+    margin-bottom: 20px;
+    gap: 20px;
+    padding: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+
+    /*
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;*/
+
+}
+
+.item1-grilla {
+    grid-column: 1 / 2;
+    grid-row:  1 / 2;
+}
+
+.item2-grilla {
+    grid-column: 2 / 3;
+    grid-row:  1 / 2;
+}
+
+.item3-grilla {
+    grid-column: 3 / 4;
+    grid-row:  1 / 2;
+}
+
+
+.item4-grilla {
+    grid-column: 4 / 5;
+    grid-row:  1 / 2;
+}
+
+.item5-grilla {
+    grid-column: 1 / 2;
+    grid-row:  2 / 3;
+}
+
+.item6-grilla {
+    grid-column: 2 / 3;
+    grid-row:  2 / 3;
+}
+
+.item7-grilla {
+    grid-column: 3 / 4;
+    grid-row:  2 / 3;
+}
+
+.item8-grilla {
+    grid-column: 4 / 5;
+    grid-row:  2 / 3;
+}
+
+
+footer { 
+    display: flex;
+    width:90%;
+    margin-top: 30px;
+    margin-left: 45px;;
+
+
+    background-image: url(/img/fondocover.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-size: 17px;
+}
+
+
+
+.fa-instagram {
+    font-size: 30px;
+    color:red;
+    margin-left: 80px;
+}
+
+.fa-facebook {
+    font-size: 30px;
+    color: blue;
+    margin-left: 90px;
+}
+
+.item_flex:hover {
+    transform:translateY(-5px);
+    transition: transform 0.5s ease-in-out;
+    box-shadow: 0px 0px 3px grey;
+
+}
+
+
+
+.botones_productos {
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    margin: 3%;
+}
+
+form {
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+
+
+/* @media (queries)
+/*una sola columna en pantallas pequeñas*/
+@media(max-width: 600px) {
+    body { font-size: 14px;
+    background-color: red;
+}
+    .grilla {
+        grid-template-columns: 1fr; 
+    }
+}
+
+
+/* Tablets*/
+@media (min-width: 768px) and (max-width:1279px) {
+    body { font-size: 16px;
+        background-color: rgb(76, 0, 255);
+}
+    .grilla {
+    grid-template-columns: 1fr 1fr; 
+}
+}
+
+
+/*dos columnas en pantallas medianas*/
+@media(min-width: 768px) {
+    body { font-size: 14px;
+    background-color: red;
+}
+    .grilla {
+        grid-template-columns: 1fr 1fr; 
+
+    }
+}
+
+/*tres columnas en pantallas grandes*/
+@media(min-width: 1200px) {
+    body { font-size: 14px;
+    background-color: rgb(116, 146, 20);
+}
+    .grilla {
+        grid-template-columns: 1fr 1fr 1fr; 
+    }
+}
+
+/*Escritorios standard (1280px a 1599px) */
+@media(min-width: 1280px) and (max-width: 1599px) {
+    body { font-size: 14px;
+    background-color: rgb(12, 142, 71);
+}
+    .grilla {
+        grid-template-columns: 1fr 1fr 1fr; 
+
+    }
+}

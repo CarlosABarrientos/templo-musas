@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./ccs/estilo.css">
+    <title>Librería Lackington</title>
+ 
+</head>
+<body>
+    <header class="recuadro-header">
+        <div class="item-logo">
+            <img class="logo" src="./img/templomusas.jpg" width="87%" alt="Logo de la librería">
+        </div>
+        <div>
+            <h1 class="h1-clase">El Templo de las Musas</h1>
+            <h2 class="h2-clase" ><em>Lecturas con amor</em></h2>
+        </div>
+        <div>
+            <nav>
+                <ul class="nav-list">
+                    <a class="nav-item" href="./index.html"><i class="fa fa-home fa-fw" aria-hidden="true"></i></a>
+                    <li class="nav-item"><a href="./textos.html">Textos</a></li>
+                    <li class="nav-item"><a href="./ofertas.html">Ofertas</a></li>
+                    <li class="nav-item"><a href="./contacto.html">Contacto</a></li>
+                    <li class="nav-item"><a href="./ubicacion.html">Ubicación</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+ 
+    <div class="recuadro"></div>
+
+
+    <hr>
+    <main>
+        <h4>Sección para consultas</h4>
+        <form action="https://formspree.io/f/mnndqkre" method="POST">
+            <label for="nombre">Nombre: </label>
+            <input type="texto" name="Nombre" id="nombre" placeholder="Ingrese su nombre:">
+
+            <label for="apellido">Apellido: </label>
+            <input type="texto" name="Apellido" id="apellido" placeholder="Ingrese su apellido:"><br>
+            <p> </p>
+            <label for="opciones">Elija tipo de email:</label>
+            <select name="opciones" id="opciones">
+                <option value="opcion2">Laboral</option>
+                <option value="opcion3">Personal</option>
+
+           </select>
+
+            <label for="email"></label>
+            <input type="email" name="Email" id="email" placeholder="Ingrese su email:">
+           <br>
+       
+            
+            <p>Elija su género favorito:</p>
+            <form>
+              <input type="radio" id="ficcion" name="ficcion" value="ficcion">
+              <label for="ficcion">Ficción</label><br>
+              <input type="radio" id="noficcion" name="noficcion" value="noficcion">
+              <label for="css">No ficción</label><br>
+              <input type="radio" id="textos" name="textos" value="textos">
+              <label for="textos">Textos</label>
+              <p>Su consulta:</p>
+              <label for="consulta"></label>
+              <textarea name="Consulta" id="consulta" rows="5" cols="30" placeholder="Escriba aquí su consulta"></textarea>
+  
+              <br>
+              <input type="submit" name="Submit" id="submit" placeholder="Enviar">
+              <input type="reset" name="Reset" id="reset" placeholder="Restablecer"><br>
+            </form>
+        </form>  
+    </main>
+    <footer>
+        <hr>
+        <p>Desarrollador: Carlos Barrientos - 2025        |  <a href="mailto:carlos.barrientos.ok@gmail.com">Email:carlos.barrientos.ok@gmail.com</a></p>
+        <hr>
+    </footer>
+
+
+</body>
+</html>
