@@ -23,8 +23,6 @@ header {
     background-color: rgba(255, 242, 0, 0.5);
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
-    position: sticky;
     top: 40px;
     margin-top: 30px;
     margin-left: 45px;;
@@ -153,16 +151,18 @@ ul {
     list-style: none;
 }
 
-main {
+.main-contacto {
     background-image: url(/img/fondocover.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     font-size: 13px;
-    margin-left: 20px;
+    margin-left: 120px;
     margin-right: 40px;
     padding-left: 50px;
-    align-content: center;
+    align-content:end;
+    height: 420px;
+    width: 80%;
 }
 
 .cuadro-explica {

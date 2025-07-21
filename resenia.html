@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel="stylesheet" href="./ccs/resenia.css"> <!-- Enlazá con tu css -->
+    <title>Reseñas</title>
+</head>
+
+<body>
+
+        <!-- Inicio de tu header -->
+
+    <header class="recuadro-header">
+        <div class="item-logo">
+            <img class="logo" src="./img/templomusas.jpg" width="87%" alt="Logo de la librería">
+        </div>
+        <div>
+            <h1 class="h1-clase">Las musas en su templo</h1>
+            <h2 class="h2-clase" ><em>Lecturas con amor</em></h2>
+        </div>
+        <div>
+            <nav>
+                <ul class="nav-list">
+                    <a class="nav-item" href="./index.html"><i class="fa fa-home fa-fw" aria-hidden="true"></i></a>
+                    <li class="nav-item"><a href="./textos.html">Textos</a></li>
+                    <li class="nav-item"><a href="./miscelaneas.html">Misceláneas</a></li>
+                    <li class="nav-item"><a href="./resenia.html">Reseñas</a></li>
+                    <li class="nav-item"><a href="./contacto.html">Contacto</a></li>
+                    <li class="nav-item"><a href="./ubicacion.html">Ubicación</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Fin de tu header -->
+
+    <section class="resenia">
+        <h1>Clientes satisfechos</h1>
+        <div class="container my-4 text-center"></div>
+        <div class="mt-2" id="contenido">
+              <!--Contenido recuperado con Fetch -->
+        </div>
+        <button class="btn-danger" onclick="traer()">Siguiente</button>
+    </section>
+
+    <!-- Inicio de tu footer-->
+    <!-- Fin de tu footer-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+    
+    <script src="./js/resenia.js"></script> <!-- No olvides de revisar esta dirección, puede que tengas el .js en otro lugar-->
+
+
+    <div class="recuadro"></div>
+
+    <footer class="recuadro-footer">
+        <hr>
+        <p>Desarrollador: Carlos Barrientos - 2025        |  <a href="mailto:carlos.barrientos.ok@gmail.com">Email:carlos.barrientos.ok@gmail.com</a>
+
+        <i class="fa-brands fa-instagram"></i>
+
+        <i class="fa-brands fa-facebook"></i>
+        
+        <hr>
+    </footer>
+</body>
+</html>

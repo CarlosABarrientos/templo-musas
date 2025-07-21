@@ -12,7 +12,7 @@ html {
 }
 
 body {
-    background-image: url(/img/biblioteca.png);
+    background-color: rgba(211, 217, 187, 0.5);
 }
 
 header {
@@ -24,7 +24,7 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    position: sticky;
+    transform: translateX(0);
     top: 40px;
     margin-top: 30px;
     margin-left: 45px;;
@@ -66,7 +66,6 @@ h1 {
 
 .h1-clase:hover {
     color: rgb(21, 0, 255);
-
 }
 
 .h2-clase:hover {
@@ -82,14 +81,12 @@ h2 {
 .nav {
     display: flex;
     justify-content: space-between;
-
     height: auto;
     margin-right: 3%;
 }
 
 nav ul {
     display: flex;
-
     list-style: none;
     align-items: center;
     margin-top: 120px;
@@ -105,7 +102,6 @@ nav li {
 
 .contenedor {
     display: grid;
-
     display: flex;
     margin-top: 220px;
     justify-content:space-around;
@@ -124,15 +120,12 @@ p {
 }
 
 .pcolor {
-   
     color:rgb(113, 96, 52);
-
 }
 
 li a {
     color: inherit;
     text-decoration: none;
-
 }
 
 .nav-item {
@@ -140,8 +133,6 @@ li a {
     margin-right: 40px;
     display: inline-block;
     padding-top: 3px;
-
-
 }
 
 .nav-list:hover {
@@ -171,20 +162,43 @@ main {
 
 .textos {
     display: flex;
-    margin-top: 120px;
-    justify-content:center;
+    margin-top: 220px;
     flex-wrap:wrap;
+    justify-content:center;
     align-items:stretch;
     flex-wrap: wrap;
     height: auto;
     width: auto;
     justify-items: center;
+    margin-top: 220px;
+    margin-left: 10px;
+    margin-right: 10px;
+    gap: 10px;
+    padding: 25px;
+    border: 5px solid black;
 }
 
+.card-text {
+    margin: 2px;
+}
+
+
+
 .item {
-    width: auto;
-    height: auto;
-    transition: transform 2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    padding: 20px;
+    width: 20%;
+    height: 30%;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+    text-align: center;
+    transition: transform 1s ease-in-out;
 }
 
 .item:hover {
@@ -200,12 +214,20 @@ main {
     margin-left: 90px;
 }
 
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    height: 20%;
+    padding: 0px;
+}
+
 .card-title {
-    width: 40%;
+    width: auto;
 }
 
 .imperdible {
-    font-size:xx-large;
+    font-size: xx-large;
     z-index: 20;
 
 }
@@ -220,16 +242,28 @@ main {
 
 .recuadro {
     margin-inline-start: 25%;
-    margin-top: 80px;
+    margin-top: 50px;
+    margin-left: 70px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size:70px;
+    font-size:50px;
     font-weight: 70px;
     -webkit-text-stroke-width: 3px;
     -webkit-text-stroke-color: rgb(9, 9, 9);
     width: 100%vw;
     height: 30px;
+    padding-top: 10px;
 }
-
+/*
+.p-seleccionados {
+    color: rgb(113, 96, 52);
+    font-size: 5px;
+    margin-left: 50px;
+    margin-top: 20px;
+    padding: 0px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.8); 
+}
+    */
 .p-seleccionados:hover {
     color: rgb(232, 230, 230);
 }
@@ -290,19 +324,49 @@ main {
     grid-row:  2 / 3;
 }
 
-.resenia {
-    text-align: center;
+.imperdible {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 70vh;
-    padding-top: 85;
-    margin: 20px 0;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    margin-left: 50px;
+    margin-top: 20px;
+    padding: 20px;
+    width: 500px;
+    height: 400px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    }
+    
+.contenedor-imperdibles {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 220px;
+    margin-left: 20px;
+    margin-right: 20px;
+    gap: 20px;
+    padding: 20px;
+    border: 5px solid black;
+    height: auto;
+    width: auto;
 }
+
+
+.subtitulado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+    margin-top: 20px;
+    padding: 20px;
+    width: 500px;
+    height: 400px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    }
 
 footer { 
     display: flex;
@@ -316,17 +380,6 @@ footer {
     background-size: cover;
     background-attachment: fixed;
     font-size: 17px;
-}
-
-.recuadro-footer {
-    box-sizing: 100%;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-top: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
 }
 
 
@@ -360,59 +413,3 @@ footer {
 }
 /*Tengo nota para mejorar esta parte ver form*/
 
-
-
-/* @media (queries)
-/*una sola columna en pantallas pequeñas*/
-@media(max-width: 600px) {
-    body { font-size: 14px;
-    background-color: red;
-}
-    .grilla {
-        grid-template-columns: 1fr; 
-    }
-}
-
-
-/* Tablets*/
-@media (min-width: 768px) and (max-width:1279px) {
-    body { font-size: 16px;
-        background-color: rgb(76, 0, 255);
-}
-    .grilla {
-    grid-template-columns: 1fr 1fr; 
-}
-}
-
-
-/*dos columnas en pantallas medianas*/
-@media(min-width: 768px) {
-    body { font-size: 14px;
-    background-color: red;
-}
-    .grilla {
-        grid-template-columns: 1fr 1fr; 
-
-    }
-}
-
-/*tres columnas en pantallas grandes*/
-@media(min-width: 1200px) {
-    body { font-size: 14px;
-    background-color: rgb(116, 146, 20);
-}
-    .grilla {
-        grid-template-columns: 1fr 1fr 1fr; 
-    }
-}
-
-/*Escritorios standard (1280px a 1599px) */
-@media(min-width: 1280px) and (max-width: 1599px) {
-    body { font-size: 14px;
-    background-color: rgb(12, 142, 71);
-}
-    .grilla {
-        grid-template-columns: 1fr 1fr 1fr; 
-
-    }
-}

@@ -12,7 +12,7 @@ html {
 }
 
 body {
-    background-image: url(/img/biblioteca.png);
+    background-color: rgba(211, 217, 187, 0.5);
 }
 
 header {
@@ -23,8 +23,6 @@ header {
     background-color: rgba(255, 242, 0, 0.5);
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
-    position: sticky;
     top: 40px;
     margin-top: 30px;
     margin-left: 45px;;
@@ -32,7 +30,6 @@ header {
     padding-top: 10px;
     border:13px outset;
 }
-
 
 header:hover {
     box-shadow: 150px 120px 60px rgb(0, 0, 0);
@@ -99,7 +96,7 @@ nav ul {
 }
 
 nav li {
-    margin-right: 20px; /*  O un padding para separar los items */
+    margin-right: 20px;
     text-align: center;
 }
 
@@ -145,7 +142,7 @@ li a {
 }
 
 .nav-list:hover {
-color: rgb(21, 0, 255);
+    color: rgb(21, 0, 255);
 }
 
 
@@ -165,13 +162,45 @@ main {
     align-content: center;
 }
 
+
+.grilla {
+
+    margin-top: 15px;
+}
+
+.item5-grilla {
+    margin-top: 15px;
+
+    grid-column: 1 / 2;
+    grid-row:  2 / 3;
+}   
+
+.item6-grilla {
+    margin-top: 15px;
+
+    grid-column: 2 / 3;
+    grid-row:  2 / 3;
+}
+.item7-grilla {
+    margin-top: 15px;
+
+    grid-column: 3 / 4;
+    grid-row:  2 / 3;
+}
+.item8-grilla {
+    margin-top: 15px;
+
+    grid-column: 4 / 5;
+    grid-row:  2 / 3;
+}
+
 .cuadro-explica {
     margin-left: 40px;
 }
 
 .textos {
     display: flex;
-    margin-top: 120px;
+    margin-top: 220px;
     justify-content:center;
     flex-wrap:wrap;
     align-items:stretch;
@@ -221,18 +250,51 @@ main {
 .recuadro {
     margin-inline-start: 25%;
     margin-top: 80px;
+    margin-left: 70px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size:70px;
+    font-size:50px;
     font-weight: 70px;
     -webkit-text-stroke-width: 3px;
     -webkit-text-stroke-color: rgb(9, 9, 9);
     width: 100%vw;
     height: 30px;
+    padding-top: 60px;
 }
 
 .p-seleccionados:hover {
     color: rgb(232, 230, 230);
 }
+
+.grilla-general-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    gap: 20px;
+    padding: 20px;
+    border: 5px solid black;
+    height: auto;
+    width: auto;    
+}
+
+.grilla-general-carrito {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 120px;
+    margin-right: 20px;
+    gap: 20px;
+    padding: 20px;
+    border: 5px solid black;
+    height: auto;
+    width: 80%;    
+}
+
 
 .grilla {
     display:grid;
@@ -290,19 +352,49 @@ main {
     grid-row:  2 / 3;
 }
 
-.resenia {
-    text-align: center;
+.imperdible {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 70vh;
-    padding-top: 85;
-    margin: 20px 0;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    margin-left: 50px;
+    margin-top: 20px;
+    padding: 20px;
+    width: 500px;
+    height: 400px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    }
+    
+.contenedor-imperdibles {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 220px;
+    margin-left: 20px;
+    margin-right: 20px;
+    gap: 20px;
+    padding: 20px;
+    border: 5px solid black;
+    height: auto;
+    width: auto;
 }
+
+
+.subtitulado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+    margin-top: 20px;
+    padding: 20px;
+    width: 500px;
+    height: 400px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    }
 
 footer { 
     display: flex;
@@ -328,7 +420,6 @@ footer {
     padding-top: 20px;
     padding-bottom: 20px;
 }
-
 
 
 .fa-instagram {
@@ -360,59 +451,3 @@ footer {
 }
 /*Tengo nota para mejorar esta parte ver form*/
 
-
-
-/* @media (queries)
-/*una sola columna en pantallas pequeñas*/
-@media(max-width: 600px) {
-    body { font-size: 14px;
-    background-color: red;
-}
-    .grilla {
-        grid-template-columns: 1fr; 
-    }
-}
-
-
-/* Tablets*/
-@media (min-width: 768px) and (max-width:1279px) {
-    body { font-size: 16px;
-        background-color: rgb(76, 0, 255);
-}
-    .grilla {
-    grid-template-columns: 1fr 1fr; 
-}
-}
-
-
-/*dos columnas en pantallas medianas*/
-@media(min-width: 768px) {
-    body { font-size: 14px;
-    background-color: red;
-}
-    .grilla {
-        grid-template-columns: 1fr 1fr; 
-
-    }
-}
-
-/*tres columnas en pantallas grandes*/
-@media(min-width: 1200px) {
-    body { font-size: 14px;
-    background-color: rgb(116, 146, 20);
-}
-    .grilla {
-        grid-template-columns: 1fr 1fr 1fr; 
-    }
-}
-
-/*Escritorios standard (1280px a 1599px) */
-@media(min-width: 1280px) and (max-width: 1599px) {
-    body { font-size: 14px;
-    background-color: rgb(12, 142, 71);
-}
-    .grilla {
-        grid-template-columns: 1fr 1fr 1fr; 
-
-    }
-}

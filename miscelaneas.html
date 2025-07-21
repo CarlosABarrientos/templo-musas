@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./ccs/miscelaneas.css">
+    <title>Librería Lackington</title>
+ 
+</head>
+<body>
+    <header class="recuadro-header">
+        <div class="item-logo">
+            <img class="logo" src="./img/templomusas.jpg" width="87%" alt="Logo de la librería">
+        </div>
+        <div>
+            <h1 class="h1-clase">El Templo de las Musas</h1>
+            <h2 class="h2-clase" ><em>Lecturas con amor</em></h2>
+        </div>
+        <div>
+            <nav>
+                <ul class="nav-list">
+                    <a class="nav-item" href="./index.html"><i class="fa fa-home fa-fw" aria-hidden="true"></i></a>
+                    <li class="nav-item"><a href="./textos.html">Textos</a></li>
+                    <li class="nav-item"><a href="./miscelaneas.html">Misceláneas</a></li>
+                    <li class="nav-item"><a href="./contacto.html">Contacto</a></li>
+                    <li class="nav-item"><a href="./ubicacion.html">Ubicación</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+        <div class="recuadro">
+            <p class="p-seleccionados"><strong>Pequeños hallazgos que amplían horizontes</strong></p>
+        </div>
+        <div class="contenedor-imperdibles">
+            <div class="imperdible">
+                <p class="p-seleccionados" style="color: rgb(30, 29, 29);"><strong>Video imperdible de la semana</strong></p>
+
+                <iframe width="460" height="305" src="https://www.youtube.com/embed/slg4oPA5Vaw?si=0PYbqXW0E_jdsqBz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <br><br><br>
+
+            <div class="subtitulado">
+                <p class="p-seleccionados" style="color: rgb(30, 29, 29);"><strong>Sección del video subtitulado</strong></p>
+
+                <video controls muted poster="./img/biblioteca.jpeg" width="50%">
+                    <source src="./video/subtitulado.mp4" type="video/mp4"> Tu navegador no soporta la reproducción de video.
+                    <track src="./video/subtitulo.vtt"
+                    kind="subtitles" srclang="es" label="Español" defaul>
+                </video>
+
+            </div>
+        </div>
+            <div class="recuadro">
+                <p class="p-seleccionados" ><strong>Libros seleccionados por el "Consejo de Expertos"</strong></p>
+            </div>
+        <div class="textos">
+            <div class="item">
+                <img src="https://data.livriz.com/media/mediaspace/F9AFB48D-741D-4834-B760-F59344EEFF34/45/a5de3afa-b109-4d45-b749-2d4d3f780110/9786313011551_e42a26c5-4fde-440f-be93-3dcbb087f61f.jpg" width="60%" alt="Demasiado lejos (1)">
+                <div class="card-body">
+                    <p class="card-title">Demasiado lejos</p>
+                    <p class="card-text">Eduardo Sacheri</p>
+                    <p class="card-text"><small class="text-body-secondary">Precio $ 25.000</small></p>
+                    <button onclick="location.href='./textos.html'">Ir a compra</button>
+
+                </div>
+            </div>
+            <div class="item">
+                <img src="./img/El_pais_que_quieren.png" width="60%" alt="El país que quieren los dueños">
+                <div class="card-body">
+                    <p class="card-title">El país que quieren los dueños</p>
+                    <p class="card-text">Alejandro Bercovich</p>
+                    <p class="card-text"><small class="text-body-secondary">Precio $ 16.000</small></p>
+                    <button onclick="location.href='./textos.html'">Ir a compra</button>
+
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="./img/tienen_el_poder.webp" width="60%" alt="Tienen el poder y ...(2)">
+                <div class="card-body">
+                    <p class="card-title">Tienen el poder y lo van a perder</p>
+                    <p class="card-text">Diego Skliar</p>
+                    <p class="card-text"><small class="text-body-secondary">Precio $ 27.000</small></p>
+                    <button onclick="location.href='./textos.html'">Ir a compra</button>
+
+                </div>
+            </div>
+        </div>
+
+</body>
+</html>
