@@ -16,7 +16,7 @@ Información de contacto
 Lista de errores conocidos 
 
 Página web creada como ejercitación del curso Front-End JS de Talento Tech 2025
-Es un proyecto exclusivamente formativo sin fines comerciales
+Es un proyecto exclusivamente formativo sin fines comerciales.-
 
 
 Foto de <a href="https://unsplash.com/es/@plufow?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Plufow Le Studio</a> en <a href="https://unsplash.com/es/fotos/una-imagen-borrosa-de-un-fondo-azul-y-verde-5Q6yZN8ckuY?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
@@ -29,3 +29,7 @@ Para el fondo en <body> utilizando una imagen de fondo de pantalla utilizamos un
 
 
 Utilizamos font-family: "Open Sans", sans-serif;
+
+
+----------> El presente contiene elementos de Javascript, uso de un carrito de compras (con LocalStorage), y el consumo de una API REST (reseñas).
+Todo realizado con objetivos exclusivamente formativos y sin fines comerciales. <----------
