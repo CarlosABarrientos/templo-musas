@@ -406,7 +406,7 @@ footer {
     }
 }
 
-/*Escritorios standard (1280px a 1599px) */
+/*Escritorios standard (1280px a 1599px) 
 @media(min-width: 1280px) and (max-width: 1599px) {
     body { font-size: 14px;
     background-color: rgb(12, 142, 71);
@@ -416,3 +416,4 @@ footer {
 
     }
 }
+*/
